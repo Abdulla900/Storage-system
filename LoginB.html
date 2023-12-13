@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+	<title>Storage</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#login_form").click(function () {
+				$("#block_login").hide();
+				$("#block_create").show();
+			});
+			$("#create_form").click(function () {
+				$("#block_login").show();
+				$("#block_create").hide();
+			});
+		});
+
+
+	</script>
+	
+	
+	<style type="text/css">
+		*{ 
+			font-family: Times New Roman, Times, serif;
+			margin: 0px;
+			padding: 0px;
+			scroll-behavior: smooth;
+			scroll-padding-top:3px ;
+		}
+		.header{
+			text-align: center;
+			font-size: 100px;
+			color: #2980b9;
+			text-shadow: 3px 5px 4px gray;
+			}
+			.input_text, .input_password{
+				margin: 20px;
+				border: none;
+				border-bottom:3px solid #2980b9;
+				font-size: 20px;
+
+
+			}
+			label{
+				font-size: 20px;
+				margin: 10px;
+			}
+			span{
+				text-decoration: underline;
+			}
+			.btn{
+				width: 440px;
+				padding: 10px;
+				margin: 10;
+				font-size: 25px;
+				background-color: #2980b9;
+				color: white;
+				border: none;
+			}
+		
+			.btn:hover{
+				color: black;
+			}
+
+			#fieldset{
+				width: 470px;
+				margin: auto;
+				margin-top: 10px;
+				padding: 10px;
+				margin-bottom: 10px;
+				border-radius: 30px;
+				border: 3px solid #2980b9;
+
+			}
+			legend{
+				font-size: 25px;
+				color: #2980b9;
+			}
+			#block_create{
+				display: none;
+			}
+	
+	</style>
+		
+</head>
+<body>
+	
+	<div class="header"><h1 style="font-size: 100px;">Storage</h1></div>
+	<div id="block_login">
+	<form method="post" action="" autocomplete="off">
+		<fieldset id="fieldset">
+			<legend>Login</legend>
+			<table>
+				<tr>
+					<td><label>ID</label></td>
+					<td><input class="input_text" type="text" name="text" required=""></td>
+				</tr>
+				<tr>
+					<td><label>Password</label></td>
+					<td><input class="input_password" type="password" name="password" required=""></td>
+				</tr>
+				<tr>
+			
+					<td colspan="2"><input class="btn" type="submit" name="Create" value="login"></td>
+				
+				</tr>
+				<tr>
+					<td colspan="2"><span class="NewAcc" id="login_form">Craete New Account</span></td>
+				</tr>
+			</table>
+		</fieldset>
+		
+	</form>
+</div>
+
+<div id="block_create">
+	<form method="post" action="LoginB.html" autocomplete="off">
+		<fieldset id="fieldset">
+			<legend>Login</legend>
+			<table>
+				<tr>
+					<td><label>ID Admin</label></td>
+					<td><input class="input_text" type="text" name="text" required=""></td>
+				</tr>
+				<tr>
+					<td><label>Password Admin</label></td>
+					<td><input class="input_password" type="password" name="password" required=""></td>
+				</tr>
+				<tr>
+					<td><label>New ID</label></td>
+					<td><input class="input_text" type="text" name="text" required=""></td>
+				</tr>
+				<tr>
+					<td><label>New Password</label></td>
+					<td><input class="input_text" type="text" name="text" required=""></td>
+				</tr>
+				<tr>
+			
+					<td colspan="2"><input class="btn" type="submit" name="Create" value="login"></td>
+				
+				</tr>
+				<tr>
+					<td colspan="2"><span class="NewAcc" id="create_form">Craete New Account</span></td>
+				</tr>
+			</table>
+		</fieldset>
+		
+	</form>
+</div>
+</body>
+</html>
+

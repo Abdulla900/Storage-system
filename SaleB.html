@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sale</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script> 
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#search_show").click(function () {
+				$("#block_search").show();
+				$("#block_sale").hide();
+			});
+			$("#sale_show").click(function () {
+				$("#block_sale").show();
+				$("#block_search").hide();
+			});
+		});
+	</script>
+	<style type="text/css">
+		*{
+			font-family: Times New Roman,Times,serif;
+
+		}
+		.header{
+			text-align: center;
+			font-size: 50px;
+			color: #2980b9;
+			text-shadow: 3px 4px 4px gray;
+			margin: -30px;
+		}
+		ul{
+			text-align: center;
+		}
+		li{
+			display:inline-block;
+			margin: 0px;
+		}
+		li a{
+		color: #2980b9;
+		font-size: 30px;
+		border-bottom:3px solid #2980b9 ;
+		padding-left: 50px;
+		padding-right: 50px;
+		text-decoration: none;
+		}
+		a:hover{
+			color: black;
+			background-color: #2980b9;
+			border: 3px solid #2980b9;
+			border-radius: 20px;
+		}
+		.active{
+			background-color: #2980b9;
+			color: white;
+			border-radius: 20px;
+		}
+		.input{
+			width: 30%;
+			margin: 10px auto;
+
+		}
+		.input .text{
+			font-size: 20px;
+			border-style: none;
+			border-bottom: 3px solid #2980b9;
+			width: 100%;
+		}
+		label{
+			font-size: 20px;
+		}
+		.save{
+			width: 100%;
+			margin: 8px;
+			padding:5px;
+			font-size: 30px;
+			background-color: #2980b9;
+			color: white;
+			border-style: none;
+			border-radius: 30px;
+		}
+		.save:hover{
+			color: black;
+		}
+		#block_sale{
+			display: none;
+		}
+		#block_search{
+			display: none;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="header"><h1>Storage</h1></div>
+<ul>
+	<li><a href="#" class="active">Sale</a></li>
+	<li><a href="#">Storage</a></li>
+	<li><a href="#">Purchase</a></li>
+</ul>
+<table class="input">
+	<tr>
+		<td><input class="save" type="submit" name="btn" id="search_show" value="Search"></td>
+		<td><input class="save" type="submit" name="btn" id="sale_show" value="Sale"></td>
+	</tr>
+</table>
+<div id="block_sale">
+<form method="post" action="#" autocomplete="off">
+	<table class="input">
+		<tr>
+			<td><label>Coustmer ID</label></td>
+			<td><input class="text" type="text" name="code" required=""></td>
+		</tr>
+		<tr>
+			<td><label>Phone Number</label></td>
+			<td><input class="text" type="text" name="code" required=""></td>
+		</tr>
+		<tr>
+			<td><label>Code Of item</label></td>
+			<td><input class="text" type="text" name="code" required=""></td>
+		</tr>
+		<tr>
+			<td><label>Name Of Item</label></td>
+			<td><input class="text" type="text" name="code" required=""></td>
+		</tr>
+		<tr>
+			<td><label>Price</label></td>
+			<td><input class="text" type="text" name="code" required=""></td>
+		</tr>
+		<tr>
+			<td><label>Price All Item</label></td>
+			<td><input class="text" type="text" name="code" required=""></td>
+		</tr>
+		<tr>
+			<td><input class="save" type="submit" name="btn" value="Save"></td>
+		</tr>
+
+	</table>
+</form>
+</div>
+
+<div id="block_search">
+	<form>
+		<table class="input">
+			<tr>
+				<td><input class="text" type="text" name="id_search" required="" placeholder="search....."></td>
+				<td><input class="save" type="submit" name="search" value="Search"></td>
+
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html> 

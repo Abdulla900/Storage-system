@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  <title>Purchase</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script> 
+  <style type="text/css">
+    *{
+      font-family: Times, Times New Roman;
+    }
+  </style>
+</head>
+<body class="container pt-5">
+  <div class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top container rounded">
+    <h3 class="navbar-brand">Storage</h3>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar-collapse" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="#SaleB.html" class="nav-link">Sale</a></li>
+      <li class="nav-item"><a href="#StorageB.html" class="nav-link">Storage</a></li>
+      <li class="nav-item"><a href="#PurchaseB.html" class="nav-link active" >Purchase</a></li>
+    </ul>
+  </div>
+  </div>
+  
+  <form method="post" action="PurchaseA.html" autocomplete="off">
+
+  <div class="row mb-2 mt-5">
+    <div class="col-lg-2">
+      Code
+    </div>
+    <div class="col-lg-2">
+      <input class="form-control" type="text" name="text" placeholder="Enter Your Code">
+    </div>
+    <div class="col-lg-2">
+      Name
+    </div>
+    <div class="col-lg-2">
+      <input class="form-control" type="text" name="text" placeholder="Enter Your Name">
+    </div>
+    <div class="col-lg-2">
+      No Of Item
+    </div>
+    <div class="col-lg-2">
+      <input class="form-control" type="text" name="text" placeholder="Enter Your Item">
+    </div>
+  </div>
+
+
+    <div class="row mb-2">
+    <div class="col-lg-2">
+      Purchase Price
+    </div>
+    <div class="col-lg-2">
+      <input class="form-control" type="text" name="purchase_Name" placeholder="Enter Purchase Price ">
+    </div>
+    <div class="col-lg-2">
+      Sale Price
+    </div>
+    <div class="col-lg-2">
+      <input class="form-control" type="text" name="sale_price" placeholder="Enter Sale Price ">
+    </div>
+    <div class="col-lg-2">
+      Expire Date
+    </div>
+    <div class="col-lg-2">
+      <input class="form-control" type="Date" name="expire_date" placeholder="Enter Purchase Price ">
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
+      <input class="btn btn-primary btn-block" type="submit" name="save" value="Save"></div>
+  </div>
+
+
+  </form>
+</div>
+
+  <table class="table table-striped table-hover">
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>No Of Item</th>
+      <th>Purchase</th>
+      <th>All Item</th>
+      <th>Sale Price</th>
+      <th>All Item</th>
+      <th>Expire Date</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>A</td>
+      <td>50</td>
+      <td>1$</td>
+      <td>100</td>
+      <td>2.5$</td>
+      <td>125$</td>
+      <td>2/2/2024</td>
+    </tr>
+     <tr>
+      <td>002</td>
+      <td>B</td>
+      <td>40</td>
+      <td>1$</td>
+      <td>100</td>
+      <td>2.5$</td>
+      <td>125$</td>
+      <td>2/1/2024</td>
+    </tr>
+     <tr>
+      <td>003</td>
+      <td>C</td>
+      <td>50</td>
+      <td>1$</td>
+      <td>100</td>
+      <td>2.5$</td>
+      <td>125$</td>
+      <td>2/3/2024</td>
+    </tr>
+     <tr>
+      <td>004</td>
+      <td>D</td>
+      <td>50</td>
+      <td>1$</td>
+      <td>100</td>
+      <td>2.5$</td>
+      <td>125$</td>
+      <td>2/92024</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
